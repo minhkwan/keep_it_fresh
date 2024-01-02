@@ -2,17 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:keep_it_fresh/pages/getting_started_pages/getting_started_page.dart';
+import 'package:keep_it_fresh/pages/login_pages/login_page.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
-      statusBarColor: Color(0x0ff6fff6),
+      statusBarColor: Color(0xFF46DE99),
       statusBarIconBrightness: Brightness.dark,
     ),
   );
+
+  // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
 
   runApp(const MainApp());
 }
@@ -28,7 +30,7 @@ class MainApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        home: GettingStartedPage(),
+        home: LoginPage(),
       ),
     );
   }

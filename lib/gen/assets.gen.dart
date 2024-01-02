@@ -9,8 +9,35 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/icFreshGo.svg
+  String get icFreshGo => 'assets/icons/icFreshGo.svg';
+
+  /// File path: assets/icons/ic_logOut.svg
+  String get icLogOut => 'assets/icons/ic_logOut.svg';
+
+  /// File path: assets/icons/ic_profile.svg
+  String get icProfile => 'assets/icons/ic_profile.svg';
+
+  /// File path: assets/icons/ic_truck.svg
+  String get icTruck => 'assets/icons/ic_truck.svg';
+
+  /// List of all assets
+  List<String> get values => [icFreshGo, icLogOut, icProfile, icTruck];
+}
+
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/img_freshGo.png
+  AssetGenImage get imgFreshGo =>
+      const AssetGenImage('assets/images/img_freshGo.png');
+
+  /// File path: assets/images/img_freshTruck.jpg
+  AssetGenImage get imgFreshTruck =>
+      const AssetGenImage('assets/images/img_freshTruck.jpg');
 
   /// File path: assets/images/img_onboarding1.png
   AssetGenImage get imgOnboarding1 =>
@@ -29,13 +56,20 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/img_splash.png');
 
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [imgOnboarding1, imgOnboarding2, imgOnboarding3, imgSplash];
+  List<AssetGenImage> get values => [
+        imgFreshGo,
+        imgFreshTruck,
+        imgOnboarding1,
+        imgOnboarding2,
+        imgOnboarding3,
+        imgSplash
+      ];
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
