@@ -7,6 +7,7 @@
         android:label="keep_it_fresh"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        <receiver android:exported="false" android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver" />
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDucDz7E7rqXccdGze92VJTpq_pvYffVo0"/>
         <activity

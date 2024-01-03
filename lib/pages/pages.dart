@@ -3,3 +3,4 @@
 export 'getting_started_pages/getting_started_pages.dart';
 export 'home_pages/home_pages.dart';
 export 'login_pages/login_pages.dart';
+export 'order/order.dart';

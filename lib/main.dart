@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:keep_it_fresh/pages/login_pages/login_page.dart';
+import 'package:keep_it_fresh/lib.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
@@ -30,7 +31,7 @@ class MainApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
-        home: LoginPage(),
+        home: GettingStartedPage(),
       ),
     );
   }

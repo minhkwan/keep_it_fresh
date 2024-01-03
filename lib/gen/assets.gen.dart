@@ -15,17 +15,24 @@ class $AssetsIconsGen {
   /// File path: assets/icons/icFreshGo.svg
   String get icFreshGo => 'assets/icons/icFreshGo.svg';
 
+  /// File path: assets/icons/ic_humidity.svg
+  String get icHumidity => 'assets/icons/ic_humidity.svg';
+
   /// File path: assets/icons/ic_logOut.svg
   String get icLogOut => 'assets/icons/ic_logOut.svg';
 
   /// File path: assets/icons/ic_profile.svg
   String get icProfile => 'assets/icons/ic_profile.svg';
 
+  /// File path: assets/icons/ic_temparature.svg
+  String get icTemparature => 'assets/icons/ic_temparature.svg';
+
   /// File path: assets/icons/ic_truck.svg
   String get icTruck => 'assets/icons/ic_truck.svg';
 
   /// List of all assets
-  List<String> get values => [icFreshGo, icLogOut, icProfile, icTruck];
+  List<String> get values =>
+      [icFreshGo, icHumidity, icLogOut, icProfile, icTemparature, icTruck];
 }
 
 class $AssetsImagesGen {

@@ -44,7 +44,7 @@ class _GettingStartedPageState extends State<GettingStartedPage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             SizedBox(
-              height: 660.w,
+              height: 680.w,
               child: PageView(
                 physics: const ClampingScrollPhysics(),
                 controller: _pageController,
@@ -56,18 +56,18 @@ class _GettingStartedPageState extends State<GettingStartedPage> {
                 children: <Widget>[
                   onBoardingScreen(
                     Assets.images.imgOnboarding1.path,
-                    'Choose Your Favorite Drink',
-                    'Find your favorite drink anytime from your existing location easily',
+                    'Welcome to FreshGo.',
+                    'Explore a Greener Way to Shop. Discover seamless and eco-friendly food delivery, enhanced by cutting-edge AI and IoT technology',
                   ),
                   onBoardingScreen(
                     Assets.images.imgOnboarding2.path,
-                    'Choose Your Favorite Drink',
-                    'Find your favorite drink anytime from your existing location easily',
+                    'Browse and Select Fresh Choices',
+                    'Find and Select Fresh Produce with Ease. Discover locally sourced, environmentally friendly food options using our intuitive platform.',
                   ),
                   onBoardingScreen(
                     Assets.images.imgOnboarding3.path,
-                    'Choose Your Favorite Drink',
-                    'Find your favorite drink anytime from your existing location easily',
+                    'Effortless and Sustainable Delivery',
+                    'Opt for Sustainable Food Delivery. Enjoy hassle-free delivery while supporting green initiatives, ensuring freshness every step of the way.',
                   ),
                 ],
               ),
@@ -115,7 +115,9 @@ class _GettingStartedPageState extends State<GettingStartedPage> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFF46DE99)),
-                  onPressed: () => print('Get started'),
+                  onPressed: () => Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(builder: (ctx) => const LoginPage()),
+                      (route) => false),
                   child: const Center(
                     child: CommonText(
                       'Get started',
@@ -148,6 +150,7 @@ class _GettingStartedPageState extends State<GettingStartedPage> {
           title,
           textColor: Colors.black,
           fontStyle: FontStyle.bold,
+          maxLines: 2,
         ),
         const SizedBox(height: 15.0),
         Padding(

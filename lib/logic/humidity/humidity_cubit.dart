@@ -13,7 +13,7 @@ class HumidityCubit extends Cubit<HumidityState> {
 
   HumidityCubit() : super(const HumidityState.initial());
 
-  void getListOrders(int page) async {
+  void getListHumidity(int page) async {
     emit(const HumidityState.loading());
     try {
       List<Humidity> data = [];
